@@ -1,0 +1,25 @@
+databaseChangeLog:
+- changeSet:
+    id: 1
+    author: luis.patino
+    changes:
+    - sql:
+        dbms: postgresql
+        sql: CREATE SCHEMA test
+- changeSet:
+    id: 3
+    author: luis.patino
+    changes:
+    - createTable:
+        schemaName: test
+        tableName: user
+        columns:
+        - column:
+            name: id
+            type: varchar(30)
+        - column:
+            name: name
+            type: varchar(100)
+        - column:
+            name: phone
+            type: varchar(30)
