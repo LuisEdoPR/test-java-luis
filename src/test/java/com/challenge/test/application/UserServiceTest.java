@@ -30,7 +30,7 @@ public final class UserServiceTest {
     }
 
 
-    // Lis Tests
+    // Lis Tests 2
     @Test
     public void getUsers() {
         //GIVEN
