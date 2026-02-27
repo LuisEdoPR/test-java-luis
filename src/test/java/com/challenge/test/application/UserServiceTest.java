@@ -54,7 +54,7 @@ public final class UserServiceTest {
     @Test(expected = UserException.class)
     public void getUserByIdUserNotFound() {
         //GIVEN
-        String userId = "123456";
+        String userId = "1234567";
         //WHEN
         given(userRepository.findById(userId)).willReturn(Optional.empty());
         // WHEN
