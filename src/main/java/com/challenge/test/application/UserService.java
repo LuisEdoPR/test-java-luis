@@ -29,7 +29,7 @@ public class UserService {
         UserEntity userEntity = userRepository
                 .findById(id)
                 .orElseThrow(() -> new UserException(
-                                "User with Id: " + id + " not found",
+                                "User with Id: " + id + " not found."
                                 null,
                                 HttpStatus.NOT_FOUND.value()
                         )
